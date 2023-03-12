@@ -26,6 +26,7 @@ h1{
     display: flex;
     flex-direction: column;
     cursor:pointer;
+    color: blue;
 }
 
 .acc_img{
@@ -53,7 +54,7 @@ h1{
     display: none;
 }
 .accordion:hover .tab-label{
-    color:blue;
+    color:#000;
 }
 .acc_input:checked+.tab-label .active{
     transform: rotate(45deg);
@@ -68,7 +69,7 @@ h1{
 }
 .accordion:hover .active{
     display: block;
-    color:blue;
+    color:black;
 }
 .accordion_meme:hover .acc_img{
     opacity: 1;
@@ -77,67 +78,23 @@ h1{
     overflow: visible;
 }
 
+@media screen and (min-width: 820px) {
 
+    .tab-label {
+        font-size: 22px;
+    }
 
-
-/* .accordion .tab-label:before{
-    content: '✚';
-    font-weight: bolder;
-    float: right;
+    h1 {
+        font-size: 32px;
+    }
 }
 
-.accordion .acc_input:checked+.tab-label:before{
-    content: '✚';
-    font-weight: bolder;
-    transition: 0.5s;
-    transform: rotate(45deg);
-} */
+@media screen and (min-width: 1920px) {
+    .tab-label {
+        font-size: 32px;
+    }
 
-/* .accordion .acc_body{
-    width: 98%;
-    width: calc(100% - 20px);
-    margin: 0 auto;
-    color: rgba(0, 0, 0, 0);;
-    background-color: rgba(255, 255, 255, 0.2);
-    line-height: 28px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    transition: 0.5s;
+    h1 {
+        font-size: 42px;
+    }
 }
-.accordion label {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    display: block;
-    padding: 15px;
-    width: 100%;
-    color: #000;
-    font-weight: 400;
-    box-sizing: border-box;
-    z-index: 100;
-}
-
-.accordion label:before {
-    font-family: 'FontAwesome';
-    content: '\f067';
-    font-weight: bolder;
-    float: right;
-  }
-  
-  .accordion input:checked+label {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  
-  .accordion input:checked+label:before {
-    font-family: 'FontAwesome';
-    content: '\f00d';
-    transition: 0.5s;
-  }
-  
-  .accordion input:checked~.acc_body {
-    height: auto;
-    color: #000;
-    font-size: 16px;
-    padding: 20px;
-    transition: 1s;
-  } */
